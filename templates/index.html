@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/index.css" />
+    <script src="{{ url_for('static', filename = 'index.js') }}"></script>
+
+    <title>Diabetes Prediction App</title>
+  </head>
+  <body>
+    <div class="PredictContainer">
+      <h1 style="color: #4ec4b8">Diabetes Prediction</h1>
+      <p>
+        Fill And predict<br />
+        you should consult your doctor for further evaluation and treatment.
+      </p>
+      <hr />
+
+      <form id="contact-form" class="contact-form">
+        <div class="inptContainer">
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="age" required />
+        </div>
+        <div class="inptContainer">
+          <label for="bmi">Height (cm):</label>
+          <input type="text" id="height" name="height" required />
+        </div>
+        <div class="inptContainer">
+          <label for="weight">Weight (kg):</label>
+          <input type="text" id="weight" name="weight" required />
+        </div>
+        <div class="inptContainer">
+          <label for="pregnancies">Pregnancies:</label>
+          <input type="text" id="pregnancies" name="pregnancies" />
+        </div>
+        <div class="inptContainer">
+          <label for="glucose">Glucose:</label>
+          <input type="text" id="glucose" name="glucose" required />
+        </div>
+
+        <div class="inptContainer">
+          <label for="blood_pressure">Blood Pressure:</label>
+          <input type="text" id="blood_pressure" name="blood_pressure" required />
+        </div>
+
+        <div class="inptContainer">
+          <label for="skin_thickness">Skin Thickness (mm):</label>
+          <input type="text" id="skin_thickness" name="skin_thickness" />
+        </div>
+
+        <div class="inptContainer">
+          <label for="insuline">Insuline:</label>
+          <input type="text" id="insuline" name="insuline" required />
+        </div>
+
+        <div class="checkContainer" id="checkContainer">
+          <div class="checker">
+            <label for="grandparent_diabetes">Diabetic Grandparent:</label>
+            <input type="checkbox" name="grandparent_diabetes" id="grandparent_diabetes" />
+          </div>
+          <div class="checker">
+            <label for="parent_diabetes">Diabetic Parent :</label>
+            <input type="checkbox" name="parent_diabetes" id="parent_diabetes" />
+          </div>
+          <div class="checker">
+            <label for="sibling_diabetes">Diabetic Sibling:</label>
+            <input type="checkbox" id="sibling_diabetes" name="sibling_diabetes" />
+          </div>
+        </div>
+        <input id="button" class="btn" type="submit" value="Predict" />
+      </form>
+    </div>
+
+    <div class="resultContainer">
+      <h1 style="color: #4ec4b8">Diabetes Prediction Result</h1>
+      <p class="advice">
+        Please do not rely solely on this website.<br />
+        Please consult your doctor.
+      </p>
+      <p id="result_p"></p>
+    </div>
+  </body>
+</html>
+
+{% block script %}
+
+{% endblock %}
