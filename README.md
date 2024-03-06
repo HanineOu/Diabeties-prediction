@@ -23,4 +23,4 @@ This Flask application is designed to predict the likelihood of an individual ha
 
 ## Model Training
 - The model used in this application was trained using XGBoost.
-- For detailed information about the model training process, including data visualization and experimentation with different algorithms, refer to the [Google Colab notebook](https://colab.research.google.com/drive/1kZmq4F7RLejLT2SkdLTENg_EDUXzCy--?usp=sharing)https://colab.research.google.com/drive/1kZmq4F7RLejLT2SkdLTENg_EDUXzCy--?usp=sharing) sharing provided in this repository.
+- For detailed information about the model training process, including data visualization and experimentation with different algorithms, refer to the [Google Colab notebook](https://colab.research.google.com/drive/1kZmq4F7RLejLT2SkdLTENg_EDUXzCy--?usp=sharing) sharing provided in this repository.
