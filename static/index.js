@@ -1,4 +1,4 @@
-window.onload = function () {
+﻿window.onload = function () {
   const btn = document.getElementById("button");
   document
     .getElementById("contact-form")
